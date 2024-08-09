@@ -1,0 +1,16 @@
+2024-08-09 12:16:52,458 | WARNING | Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "C:\python\PythonLearn\Module12\Test_HW40.py", line 41, in test_run
+    sportsmen = HW43.Runner(11341, 10)
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\PythonLearn\Module12\HW43.py", line 7, in __init__
+    raise TypeError(f'Имя может быть только числом, передано {type(name).__name__}')
+TypeError: Имя может быть только числом, передано int
+2024-08-09 12:16:52,461 | WARNING | Неверная скорость для Runner
+Traceback (most recent call last):
+  File "C:\python\PythonLearn\Module12\Test_HW40.py", line 31, in test_walk
+    sportsmen = HW43.Runner('Коля', -5)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\python\PythonLearn\Module12\HW43.py", line 12, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
